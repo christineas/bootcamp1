@@ -5,74 +5,236 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./myproject.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-left">
-            <ul>
-                <img src="./logo.png"/>
-                <li class="active">
-                    <a href="index.html">Home</a>
-                    <a href="myproject.html">My Project</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="nav-right">
-            <button type="button " onclick="document.location='contactform.html'">Contact Me</button>
-        </div>
-    </nav>
-
-    <form>
-        <h1>Add My Project</h1>
-
-        <label for="projectname" class="labelbox">Project Name</label><br>
-        <input type="text" id="projectname" required placeholder="Project Name" class="inputbox"/><br>
-
-        <div class="flex-container">
-            <div>
-                <label for="startdate" class="startendlabel">Start Date</label>
-                <input type="date" id="startdate" required placeholder="Start Date" class="startendbox"/>
+    <!-- add my project -->
+    <div style="background-color: #D7DADC;">
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <img src="./logo.png"/>
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                        <a href="myproject.html">My Project</a>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <label for="enddate" class="startendlabel">End Date</label>
-                <input type="date" id="enddate" required placeholder="End Date" class="startendbox"/>
+    
+            <div class="nav-right">
+                <button type="button " onclick="document.location='contactform.html'">Contact Me</button>
             </div>
-        </div>
-
-        <label for="description" class="labelbox">Description</label> <br>
-        <textarea id="description" required placeholder="Description"></textarea><br>
-
-        <label for="technologies" class="labelbox">Technologies</label><br>
-        <div class="flex-container">
-            <div>
-                <input type="checkbox" id="js" name="js" value="js" class="inputcheckleft">
-                <label for="js">Node JS</label>
+        </nav>
+        <form>
+            <h1>Add My Project</h1>
+    
+            <label for="projectname" class="labelbox">Project Name</label><br>
+            <input type="text" id="title" required placeholder="Project Name" class="inputbox"/><br>
+    
+            <div class="flex-container">
+                <div>
+                    <label for="startdate" class="startendlabel">Start Date</label>
+                    <input type="date" id="startdate" required placeholder="Start Date" class="startendbox"/>
+                </div>
+                <div>
+                    <label for="enddate" class="startendlabel">End Date</label>
+                    <input type="date" id="enddate" required placeholder="End Date" class="startendbox"/>
+                </div>
             </div>
+    
+            <label for="description" class="labelbox">Description</label> <br>
+            <textarea id="content" required placeholder="Description"></textarea><br>
+    
+            <label for="technologies" class="labelbox">Technologies</label><br>
+            <div class="flex-container">
+                <div>
+                    <input type="checkbox" id="js" name="js" value="js" class="inputcheckleft">
+                    <label for="js">Node JS</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" id="js" name="js" value="js" class="inputcheckright">
+                    <label for="js">Next JS</label>
+                </div>
+            </div><br>
+            <div class="flex-container">
+                <div>
+                    <input type="checkbox" id="js" name="js" value="js" class="inputcheckleft">
+                    <label for="js">React JS</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="js" name="js" value="js" class="inputcheckright">
+                    <label for="js">TypeScript</label>
+                </div>
+            </div>
+            <br>
+            <div>
+                <label for="image" class="labelboxupload">Upload Image</label>
+                <input type="file" id="input-image"/>
+            </div>
+    
+            <button type="button" onclick="addProject(event)">Submit</button>
+        </form>
+    </div>
+    <!-- add my project -->
+
+    <!-- my project -->
+    <div>
+            <h1>My Project</h1>
             
-            <div>
-                <input type="checkbox" id="js" name="js" value="js" class="inputcheckright">
-                <label for="js">Next JS</label>
-            </div>
-        </div><br>
-        <div class="flex-container">
-            <div>
-                <input type="checkbox" id="js" name="js" value="js" class="inputcheckleft">
-                <label for="js">React JS</label>
-            </div>
-            <div>
-                <input type="checkbox" id="js" name="js" value="js" class="inputcheckright">
-                <label for="js">TypeScript</label>
-            </div>
-        </div>
-        <br>
-        <div>
-            <label for="image" class="labelboxupload">Upload Image</label>
-            <input type="file" id="image"/>
-        </div>
+            <!-- card atas -->
+            <div class="flex-container">
+                <a href="dumbwaysweb.html" class="abc">
+                    <div class="card" style="margin-left: 380px;">
+                        <div class="card2">
+                            <img src="project1.png">
+                        </div>
+                        <h3>Dumbways Mobile App - 2021</h3>
+                        <p >durasi : 3 bulan</p>
+                        <p>App that used for dumbways student, it was deployed and can downloaded on playstore.</p>
+                        <p>Happy Download</p>
+                </a>
+                        <div class="flex-container">
+                            <i class="fab fa-google-play" id="icon"></i>
+                            <i class="fab fa-android" id="icon"></i>
+                            <i class="fab fa-java" id="icon" style="font-weight: bold;"></i>
+                        </div>
+                        <div class="flex-container">
+                            <div>
+                                <button class="button1">edit</button>
+                            </div>
+                            <div>
+                                <button class="button1">delete</button>
+                            </div>
+                        </div>
+                    </div>
+                <a href="dumbwaysweb.html" class="abc">
+                    <div class="card" style="margin-left: 50px;">
+                        <div class="card3">
+                            <img src="project2.jpg" style="width: 350px;">
+                        </div>
+                        <h3>Dumbways Mobile App - 2021</h3>
+                        <p >durasi : 3 bulan</p>
+                        <p>App that used for dumbways student, it was deployed and can downloaded on playstore.</p>
+                        <p>Happy Download</p>
+                </a>
+                    <div class="flex-container">
+                        <i class="fab fa-google-play" id="icon"></i>
+                        <i class="fab fa-android" id="icon"></i>
+                        <i class="fab fa-java" id="icon" style="font-weight: bold;"></i>
+                    </div>
+                    <div class="flex-container">
+                        <div>
+                            <button class="button1">edit</button>
+                        </div>
+                        <div>
+                            <button class="button1">delete</button>
+                        </div>
+                    </div>
+                </div>
 
-        <button type="button" onclick="">Submit</button>
+                <div class="card" style="margin-left: 50px;">
+                    <div class="card2">
+                        <img src="project3.jpg">
+                    </div>
+                    <h3 style="margin-top: 20px;">Dumbways Mobile App - 2021</h3>
+                    <p >durasi : 3 bulan</p>
+                    <p>App that used for dumbways student, it was deployed and can downloaded on playstore.</p>
+                    <p>Happy Download</p>
+                    <div class="flex-container">
+                        <i class="fab fa-google-play" id="icon"></i>
+                        <i class="fab fa-android" id="icon"></i>
+                        <i class="fab fa-java" id="icon" style="font-weight: bold;"></i>
+                    </div>
+                    <div class="flex-container">
+                        <div>
+                            <button class="button1">edit</button>
+                        </div>
+                        <div>
+                            <button class="button1">delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card atas -->
 
-    </form>
+            <!-- card bawah -->
+            <div class="flex-container">
+                <div class="card" style="margin-left: 380px;">
+                    <div class="card2">
+                        <img src="project4.jpg" style="width: 340px; height: 200px;">
+                    </div>
+                    <h3>Dumbways Mobile App - 2021</h3>
+                    <p >durasi : 3 bulan</p>
+                    <p>App that used for dumbways student, it was deployed and can downloaded on playstore.</p>
+                    <p>Happy Download</p>
+                    <div class="flex-container">
+                        <i class="fab fa-google-play" id="icon"></i>
+                        <i class="fab fa-android" id="icon"></i>
+                        <i class="fab fa-java" id="icon" style="font-weight: bold;"></i>
+                    </div>
+                    <div class="flex-container">
+                        <div>
+                            <button class="button1">edit</button>
+                        </div>
+                        <div>
+                            <button class="button1">delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-left: 50px;">
+                    <div class="card2">
+                        <img src="project5.jpg" style="width:340px; height: 200px;">
+                    </div>
+                    <h3>Dumbways Mobile App - 2021</h3>
+                    <p >durasi : 3 bulan</p>
+                    <p>App that used for dumbways student, it was deployed and can downloaded on playstore.</p>
+                    <p>Happy Download</p>
+                    <div class="flex-container">
+                        <i class="fab fa-google-play" id="icon"></i>
+                        <i class="fab fa-android" id="icon"></i>
+                        <i class="fab fa-java" id="icon" style="font-weight: bold;"></i>
+                    </div>
+                    <div class="flex-container">
+                        <div>
+                            <button class="button1">edit</button>
+                        </div>
+                        <div>
+                            <button class="button1">delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-left: 50px;" id="list-project">
+                    <div class="card2">
+                        <img src="project5.jpg" style="width:340px; height: 200px;">
+                    </div>
+                    <h3>Dumbways Mobile App - 2021</h3>
+                    <p >durasi : 3 bulan</p>
+                    <p>App that used for dumbways student, it was deployed and can downloaded on playstore.</p>
+                    <p>Happy Download</p>
+                    <div class="flex-container">
+                        <i class="fab fa-google-play" id="icon"></i>
+                        <i class="fab fa-android" id="icon"></i>
+                        <i class="fab fa-java" id="icon" style="font-weight: bold;"></i>
+                    </div>
+                    <div class="flex-container">
+                        <div>
+                            <button class="button1">edit</button>
+                        </div>
+                        <div>
+                            <button class="button1">delete</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- card bawah -->
+    </div>
+    <!-- my project -->
+
+    <!-- Javascript -->
+    <script src ="myproject.js"></script>
 </body>
 </html>
