@@ -1,0 +1,159 @@
+/*Navbar*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #cbcbcb;
+}
+
+nav .nav-left ul{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+nav .nav-left ul img{
+    list-style-type: none;
+    margin-right: 30px;
+    width: 90px;
+    height: 60px;
+}
+
+nav .nav-left ul li{
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+nav .nav-left ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 30px;
+    color: black;
+}
+
+nav .nav-left ul :active{
+    color: orangered;
+    font-weight: bold;
+}
+
+nav .nav-right button {
+    text-decoration: none;
+    background-color: #99A3A4;
+    color: #F5CBA7;
+    border: none;
+    margin-left: 30px;
+    margin-right: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*Navbar*/
+
+.flex-container {
+    display: flex;
+    background-color: white;
+}
+  
+.flex-container > div {
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* Form Submission */
+form{
+    width: 350px;
+    margin: 50px auto;
+}
+
+
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.inputbox{
+    width: 350px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 20px;
+}
+
+.labelbox{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.labelboxupload{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.startendlabel{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
+.startendbox{
+    width: 175px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: 20px;
+    margin-left: -10px;
+    margin-bottom: 12px;
+}
+
+textarea{
+    width: 350px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    resize: none;
+    height: 100px;
+    border-radius: 12px;
+    box-shadow: 20px;
+
+}
+
+.inputcheckleft{
+    margin-left: -10px;
+    margin-bottom: 10px;
+}
+
+.inputcheckright{
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+input[type=file] {
+    margin-top: 5px;
+    width: 350px;
+    height: 21px;
+    color: #444;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #555;
+  }
+
+  form button{
+    background-color: orangered;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 265px;
+    margin-top: 40px;
+}
+
+
+/* Form Submission */
+
